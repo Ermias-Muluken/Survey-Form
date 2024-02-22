@@ -1,3 +1,55 @@
 body{
-    background-color: brown;
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;
+    color: rgb(255,255,255);
+}
+
+#header{
+    background-color: cadetblue;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+#description,h1{
+    text-align: center;
+}
+#description{
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+fieldset{
+    background-color: rgba(10,10,10,0.8);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+#name-label{
+    width: 100%;
+}
+textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 100px;
+}
+input,select,textarea{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#comment-label{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#submit{
+    width: 100px;
+    height: 2em;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-color: #ffffff;
 }

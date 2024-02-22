@@ -3,78 +3,78 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="layout.css" />
-    <title></title>
+    <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title"></h1>
-    <p id="description"></p>
+    <div id="header"><h1 id="title">Header</h1></div>
+    <p id="description">Please Fill the required information</p>
     <form id="survey-form" action="" method="post">
       <fieldset>
-        <label for="name" id="name-label">
-          Name:
-          <input
-            type="text"
-            id="name"
-            n
-            ame="name"
-            placeholder="first name... last name..."
-          />
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name..."
+          required
+        />
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email..."
+          required/>
+        <label for="number" id="number-label">Number:</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="0"
+          max="100"
+          placeholder="Enter your number..."
+          required/>
+        <label for="dropdown">Choose your status:</label>
+        <select id="dropdown" required>
+            <option name="dropdown" value="">(select one)</option>
+            <option name="dropdown" value="1">User</option>
+            <option name="dropdown" value="2">Admin</option>
+            <option name="dropdown" value="3">Guest</option>
+        </select>
+        <p>Radio Buttons (required)</p>
+        <label for="button-one">
+          <input type="radio" id="button-one" name="radio-button" value="1" checked/>
+          Button one
         </label>
-        <label for="email" id="email-label">
-          Email:
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="[youremail@gmail.com][abc@gmail.com]"
-          />
-        </label>
-        <label for="number" id="number-label">
-          Number:
-          <input
-            type="number"
-            id="number"
-            name="number"
-            min="0"
-            max="100"
-            placeholder="0....100"
-          />
-        </label>
-        <label for="dropdown">
-          <select id="dropdown">
-            <option name="dropdown"></option>
-            <option name="dropdown"></option>
-          </select>
-        </label>
-        <p>Radio Buttons</p>
-        <label for="radio-button">
-          <input type="radio" id="radio-button" name="radio-button" value="1" />
-        </label>
-        <label for="radio-button">
-          <input type="radio" id="radio-button" name="radio-button" value="2" />
+        <label for="button-two">
+          <input type="radio" id="button-two" name="radio-button" value="2" />
+          Button two
         </label>
         <p>Checkbox</p>
-        <label for="checkbox">
-          <input id="checkbox" type="checkbox" value="1" />
+        <label for="check-one">
+          <input id="check-one" type="checkbox" value="1" />
+          Check one
         </label>
-        <label for="checkbox">
-          <input id="checkbox" type="checkbox" value="2" />
+        <label for="check-two">
+          <input id="check-two" type="checkbox" value="2" />
+          Check two
         </label>
-        <label for="checkbox">
-          <input id="checkbox" type="checkbox" value="3" />
+        <label for="check-three">
+          <input id="check-three" type="checkbox" value="3" />
+          Check three
         </label>
-        <label for="checkbox">
-          <input id="checkbox" type="checkbox" value="4" />
+        <label for="check-four">
+          <input id="check-four" type="checkbox" value="4" />
+          Check four
         </label>
-        <label for="checkbox">
-          <input id="checkbox" type="checkbox" value="5" />
+        <label for="check-five">
+          <input id="check-five" type="checkbox" value="5" />
+          Check five
         </label>
-        <label for="comments">
-          Comments:
-          <textarea id="comments"></textarea>
-        </label>
+        <label for="comments" id="comment-label">Comments:</label>
+        <textarea id="comments" placeholder="I love this form..."></textarea>
       </fieldset>
-      <button type="submit" name="submit" value="Submit" />
+      <input id="submit" type="submit" name="submit" value="Submit" />
     </form>
   </body>
 </html>
